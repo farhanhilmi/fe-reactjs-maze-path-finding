@@ -5,7 +5,7 @@ interface PathFinding {
 export const GetMazePath = async ({ maze }: PathFinding) => {
     try {
         const response = await fetch(
-            'http://localhost:8080/mazes/finding-path',
+            'https://api.farhanhilmi.site/api/mazes/finding-path',
             {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
